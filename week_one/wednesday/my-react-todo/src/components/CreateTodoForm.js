@@ -7,9 +7,6 @@ class CreateTodoForm extends Component {
     this.state = {
       todo: ''
     }
-    // Don't let this part scare you; it does something simple.
-    // When we go into a new function, that normally changes our context therefore changing what 'this' points to.
-    // The next to lines use the function .bind so that 'this' in onInputChange and onFormSubmit still points to 'this' here in CreateTodoForm. More on bind below:
     this.onInputChange = this.onInputChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
